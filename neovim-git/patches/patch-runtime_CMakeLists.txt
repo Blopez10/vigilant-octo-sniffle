@@ -1,0 +1,24 @@
+$NetBSD: patch-runtime_CMakeLists.txt,v 1.2 2015/08/29 20:56:15 jonthn Exp $
+
+Awk scripts are not executable install them as simple files
+
+--- runtime/CMakeLists.txt.orig	2016-08-10 00:43:50.000000000 +0200
++++ runtime/CMakeLists.txt	2016-08-10 00:53:10.000000000 +0200
+@@ -114,7 +114,7 @@
+ 
+ file(GLOB_RECURSE RUNTIME_PROGRAMS
+   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+-  *.awk *.sh *.bat)
++  *.sh *.bat)
+ 
+ foreach(PROG ${RUNTIME_PROGRAMS})
+   get_filename_component(BASEDIR ${PROG} PATH)
+@@ -124,7 +124,7 @@
+ 
+ file(GLOB_RECURSE RUNTIME_FILES
+   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+-  *.vim *.dict *.py *.rb *.ps *.tutor)
++  *.vim *.dict *.py *.rb *.ps *.awk *.tutor)
+ 
+ foreach(F ${RUNTIME_FILES})
+   get_filename_component(BASEDIR ${F} PATH)

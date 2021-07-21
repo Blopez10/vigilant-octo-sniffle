@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/primecoind
+share/examples/primecoin/primecoin.conf
+share/examples/rc.d/primecoind

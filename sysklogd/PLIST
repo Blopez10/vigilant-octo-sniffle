@@ -1,0 +1,11 @@
+@comment $NetBSD: PLIST,v 1.5 2009/10/11 10:45:20 thomasklausner Exp $
+man/man5/syslog.conf.5
+man/man8/klogd.8
+man/man8/sysklogd.8
+man/man8/syslogd.8
+sbin/klogd
+sbin/syslogd
+share/examples/rc.d/klogd
+share/examples/rc.d/syslogd
+share/examples/sysklogd/syslog.conf
+share/examples/sysklogd/syslog.conf.example

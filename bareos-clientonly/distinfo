@@ -1,0 +1,37 @@
+$NetBSD$
+
+SHA1 (bareos-18.2.6.zip) = e09f283a19a1d7fb28f2a587755f9780e9006718
+RMD160 (bareos-18.2.6.zip) = b6174f3eb40c6916238d9546cb59aca82c1aa510
+SHA512 (bareos-18.2.6.zip) = 8e92cbfc463a521c6dc48bd2aa9e0d2ad9814062a69f0c4553f9a65d6663cea9062f082bd755df85732002cc4de4ecb2480e81639a4984b6e2e32688867cf21f
+Size (bareos-18.2.6.zip) = 12919274 bytes
+SHA1 (patch-core_CMakeLists.txt) = a4a5075c40d8019bc0ee2b6af805c019575e22f6
+SHA1 (patch-core_cmake_BareosCheckIncludes.cmake) = a0433a45c9e4795ceb744b8c0589d3dc07a3f97f
+SHA1 (patch-core_cmake_BareosSetVariableDefaults.cmake) = 0fd711f91b369a68a48fb06c279834edcf87451a
+SHA1 (patch-core_platforms_netbsd_CMakeLists.txt) = dd6a54bac7e4b51e3f564f83cc7f78a8826a0d8e
+SHA1 (patch-core_platforms_netbsd_chio-changer) = 123f2fd2ec0cddcf4339cf7b0bc28a9f00ba9a06
+SHA1 (patch-core_scripts_CMakeLists.txt) = 844ecbcd8f67f5320cf181bd39b8b67d96abeada
+SHA1 (patch-core_src_CMakeLists.txt) = 6291bb32473cb26ff819f847b9b78d198b53d876
+SHA1 (patch-core_src_cats_CMakeLists.txt) = 628388998e934aa672fc11a027707d394634060b
+SHA1 (patch-core_src_cats_make__catalog__backup.pl.in) = 0753f31201df7406bf95ef95d420f66f27f8f0e8
+SHA1 (patch-core_src_cats_postgresql__queries.inc) = d255a93a039d671d9dad7b7b096dfff97095aa6e
+SHA1 (patch-core_src_dird_admin.cc) = 409e60dc07d7d6868f108ca05273ddacf166a54c
+SHA1 (patch-core_src_dird_archive.cc) = 62646c9d7ef1bc41a28c346c6c43262e70b189b0
+SHA1 (patch-core_src_dird_authenticate__console.cc) = 09ea4ab585690577fc15e4ccf157808355f80c92
+SHA1 (patch-core_src_dird_backup.cc) = e1b98f38942243dcb050b324577085ed84e2c1f7
+SHA1 (patch-core_src_dird_consolidate.cc) = fa60258e0c383e7a7f85b40501fff414bd123738
+SHA1 (patch-core_src_dird_dird__conf.cc) = 363f1eae9120bb6ed75c7ce1d7f9b0fe5e7f1a9e
+SHA1 (patch-core_src_dird_migrate.cc) = 0983dd880ed3529d162cb7cc28e8589844545899
+SHA1 (patch-core_src_dird_restore.cc) = 964a88c4c9096dfba71daef26cc0accf333f4e76
+SHA1 (patch-core_src_dird_verify.cc) = 5d8d7f0be52c18fbe657ce8dfbf0cf9550bc11b1
+SHA1 (patch-core_src_findlib_find__one.cc) = 3aaf8f0c2c88497a3e91da6ae753aea7197d7012
+SHA1 (patch-core_src_include_version.h) = a3b5ebe76ffc69c488b5fe80742b60800f728f13
+SHA1 (patch-core_src_lib_scsi__lli.cc) = d56c4824168b1f1a14b9207eecf849902fc6b550
+SHA1 (patch-core_src_lmdb_mdb.c) = 70c76d7ecf610edb47afbb91f3c4d500d85583fe
+SHA1 (patch-core_src_ndmp_CMakeLists.txt) = 931815a6cb7c04b540d2299b0cc09e63b7962e27
+SHA1 (patch-core_src_ndmp_ndmos.h) = 9e301b997b591cd487f73028f9386c5992c7ec50
+SHA1 (patch-core_src_plugins_stored_scsicrypto-sd.cc) = 910e270e3613e40fc3b746626dc6aa22710cc767
+SHA1 (patch-core_src_plugins_stored_scsitapealert-sd.cc) = 9bc6d866f819dcff888ae722003fe04bb0d06fcc
+SHA1 (patch-core_src_stored_acquire.cc) = cbdd662743e958df2530c854755ab6cf6fa95740
+SHA1 (patch-core_src_stored_btape.cc) = bae76b268e12e21be4d67aa338ebf60b9e65eeb9
+SHA1 (patch-core_src_stored_dir__cmd.cc) = dc6c2b4644274cab2db2a59005ca05e8cf165c3f
+SHA1 (patch-core_src_stored_label.cc) = 4839b2fbb829de0aa9836e9ac92be5c8592c5b7e

@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/mulpyplexer.py
+${PYSITELIB}/mulpyplexer.pyc
+${PYSITELIB}/mulpyplexer.pyo

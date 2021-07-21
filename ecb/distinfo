@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2011/11/18 05:53:34 phonohawk Exp $
+
+SHA1 (ecb-2.40.tar.gz) = 9d790b10572711cbcd032b306dfa2245950835f0
+RMD160 (ecb-2.40.tar.gz) = f0ccbbb4f8303f2557ce32c93a65de12226116b9
+Size (ecb-2.40.tar.gz) = 986581 bytes

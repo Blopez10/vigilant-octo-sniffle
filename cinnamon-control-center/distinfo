@@ -1,0 +1,7 @@
+$NetBSD: distinfo,v 1.1 2015/02/19 21:21:12 jihbed Exp $
+
+SHA1 (cinnamon-control-center-4.0.1.tar.gz) = 32fc68d87ae9fe4c81473da507abdc88e875c385
+RMD160 (cinnamon-control-center-4.0.1.tar.gz) = 310319edb453e3a2bac38a843115fb1d0367acea
+SHA512 (cinnamon-control-center-4.0.1.tar.gz) = 2b36f9414160ebf98974976b4aae35ad02ec7023117296f5dfde8efa1662e31b28326a71371d61adc2405c3afe3e0428872608dcf7bf8251fdd67ff3381e1ac5
+Size (cinnamon-control-center-4.0.1.tar.gz) = 3872552 bytes
+SHA1 (patch-shell_Makefile.am) = 53c367bb2ff2a10d7963f9faf648a84bfe067443

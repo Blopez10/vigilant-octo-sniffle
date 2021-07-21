@@ -1,0 +1,18 @@
+$NetBSD: patch-aa,v 1.2 2003/12/18 03:03:50 jeremy-c-reed Exp $
+
+--- configure.orig	2000-07-29 11:00:28.000000000 -0700
++++ configure
+@@ -63,12 +63,9 @@ if [ x$DAEMONMODE = x ]; then 
+ 	DAEMONMODE="$BINMODE"
+ fi
+ 
+-if [ x$ROOTPREFIX = x/usr ]; then
+-	ROOTPREFIX=""
+-fi
+-
+ BINDIR="$EXECPREFIX/bin"
+ SBINDIR="$EXECPREFIX/sbin"
++_PATH_INETD="$SBINDIR/inetd"
+ MANDIR="$PREFIX/man"
+ ROOTBINDIR="$ROOTPREFIX/bin"
+ 

@@ -1,0 +1,2 @@
+- Add support for NetBSD headers (be able to declare __GNUC__ and support
+  extensions)

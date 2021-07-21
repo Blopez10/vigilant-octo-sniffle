@@ -1,0 +1,60 @@
+$NetBSD$
+
+Fully control the library name via LIBNAMESUFFIX
+And the ARCH_ thing.
+
+--- Makefile.system.orig	2018-12-31 23:09:59.000000000 +0100
++++ Makefile.system	2019-03-22 17:52:10.951870000 +0100
+@@ -265,6 +265,7 @@
+ endif
+ 
+ ifneq (,$(findstring $(OSNAME), FreeBSD OpenBSD DragonFly))
++EXTRALIB	+= -lm %%LDFLAGS%%
+ MD5SUM = md5 -r
+ endif
+ 
+@@ -1204,31 +1205,15 @@
+ LIBSUFFIX = a
+ endif
+ 
+-ifneq ($(DYNAMIC_ARCH), 1)
+-ifndef SMP
+-LIBNAME		= $(LIBPREFIX)_$(LIBCORE)$(REVISION).$(LIBSUFFIX)
+-LIBNAME_P	= $(LIBPREFIX)_$(LIBCORE)$(REVISION)_p.$(LIBSUFFIX)
+-else
+-LIBNAME		= $(LIBPREFIX)_$(LIBCORE)p$(REVISION).$(LIBSUFFIX)
+-LIBNAME_P	= $(LIBPREFIX)_$(LIBCORE)p$(REVISION)_p.$(LIBSUFFIX)
+-endif
+-else
+-ifndef SMP
+-LIBNAME		= $(LIBPREFIX)$(REVISION).$(LIBSUFFIX)
+-LIBNAME_P	= $(LIBPREFIX)$(REVISION)_p.$(LIBSUFFIX)
+-else
+-LIBNAME		= $(LIBPREFIX)p$(REVISION).$(LIBSUFFIX)
+-LIBNAME_P	= $(LIBPREFIX)p$(REVISION)_p.$(LIBSUFFIX)
+-endif
+-endif
+-
++LIBNAME		= $(LIBPREFIX).$(LIBSUFFIX)
++LIBNAME_P	= $(LIBPREFIX)_p.$(LIBSUFFIX)
+ 
+ LIBDLLNAME   = $(LIBPREFIX).dll
+ IMPLIBNAME   = lib$(LIBNAMEBASE).dll.a
+ ifneq ($(OSNAME), AIX)
+-LIBSONAME    = $(LIBNAME:.$(LIBSUFFIX)=.so)
++LIBSONAME    = $(LIBNAME:.$(LIBSUFFIX)=.so).$(MAJOR_VERSION)
+ else
+-LIBSONAME    = $(LIBNAME:.$(LIBSUFFIX)=.a)
++LIBSONAME    = $(LIBNAME:.$(LIBSUFFIX)=.a).$(MAJOR_VERSION)
+ endif
+ LIBDYNNAME   = $(LIBNAME:.$(LIBSUFFIX)=.dylib)
+ LIBDEFNAME   = $(LIBNAME:.$(LIBSUFFIX)=.def)
+@@ -1259,7 +1244,7 @@
+ endif
+ 
+ export OSNAME
+-export ARCH
++export ARCH_
+ export CORE
+ export LIBCORE
+ export PGCPATH

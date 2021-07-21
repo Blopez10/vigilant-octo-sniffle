@@ -1,0 +1,50 @@
+- gnuradio-companion needs to be invoked with root privilege
+  if you add several input devices, say, to activate following parts 
+         Sources -> RTL-SDR Source
+                    osmoscom Source
+  etc. One way to to this is (as my example)
+  X11 -> xterm -> sudo -s 
+      -> export XAUTHORITY=/home/my_login/.Xauthority
+      -> gnuradio-companion
+  (Thanks rkujawa@ for this)
+  
+- OPTIONS.gnuradio= ninja doesn't package with error:
+  # Adding ninja to following line (now) stops
+  # [164/850] cd /PATH/wip/gnuradio-core/work/gnuradio-3.7.5/build/gr-audio/swig && ""
+  # FAILED: cd /PATH/wip/gnuradio-core/work/gnuradio-3.7.5/build/gr-audio/swig && ""
+  # : permission denied
+  (updating cmake 3.0.2 in wip doesn't help)
+
+****************************************************************
+  generationg replace.mk
+****************************************************************
+ 
+  754  2019-09-16 23:08  grep INFO /tmp/log | awk '{print $6}' |sed -e 's/py.$/py/' |sort > nega
+  755  2019-09-16 23:08  (cd  /tmp/wip/gnuradio-core/work/gnuradio-3.8.0.0; find .  -name \*py ) | sed 's|./||' |sort > posi
+ 
+  775  2019-09-16 23:13  diff -u  posi nega |grep '^\-' | sed -e "s/-/    /" -e 's/$/  \\/' >!  replace-python.mk
+
+
+
+****************************************************************
+  recent make problem
+****************************************************************
+-- Checking for module SWIG
+-- Found SWIG version 2.0.12.
+-- 
+-- Configuring python-support support...
+--   Dependency PYTHONLIBS_FOUND = TRUE
+--   Dependency SWIG_FOUND = TRUE
+--   Dependency SWIG_VERSION_CHECK = FALSE
+--   Dependency SIX_FOUND = TRUE
+CMake Error at cmake/Modules/GrComponent.cmake:75 (message):
+  user force-enabled python-support but configuration checked failed
+Call Stack (most recent call first):
+  CMakeLists.txt:373 (GR_REGISTER_COMPONENT)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/wip/gnuradio-core/work/gnuradio-3.8.0.0/build/CMakeFiles/CMakeOutput.log".
+See also "/tmp/wip/gnuradio-core/work/gnuradio-3.8.0.0/build/CMakeFiles/CMakeError.log".
+*** Error code 1
+

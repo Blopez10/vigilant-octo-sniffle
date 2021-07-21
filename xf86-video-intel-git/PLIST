@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libI810XvMC.la
+lib/libIntelXvMC.la
+lib/xorg/modules/drivers/intel_drv.la
+man/man4/intel.4

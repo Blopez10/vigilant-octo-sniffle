@@ -1,0 +1,14 @@
+$NetBSD$
+
+Our irssi installs in $(prefix).
+
+--- src/Makefile.am.orig	2016-07-05 16:40:14.000000000 +0000
++++ src/Makefile.am
+@@ -1,6 +1,6 @@
+ AM_CFLAGS = $(LIBOTR_CFLAGS) $(LIBGCRYPT_CFLAGS) $(PACKAGE_FLAGS)
+ 
+-IRSSI_DIST=$(oldincludedir)/irssi
++IRSSI_DIST=$(prefix)/include/irssi
+ IRSSI_INCLUDE = -I$(IRSSI_DIST) \
+ 				-I$(IRSSI_DIST)/src \
+ 				-I$(IRSSI_DIST)/src/fe-common/core \

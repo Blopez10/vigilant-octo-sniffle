@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.10 2012/05/16 14:18:48 fhajny Exp $
+lib/httpd/mod_passenger.${RUBY_DLEXT}

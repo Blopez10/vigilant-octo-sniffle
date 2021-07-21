@@ -1,0 +1,12 @@
+$NetBSD: distinfo,v 1.1 2015/02/19 17:04:55 jihbed Exp $
+
+SHA1 (cinnamon-settings-daemon-4.0.3.tar.gz) = 72f8fbaaa317de8dc173fd74a086e090dbf09404
+RMD160 (cinnamon-settings-daemon-4.0.3.tar.gz) = 1d10d4f2facd0d969dc2556d4c70ae57ef4f4288
+SHA512 (cinnamon-settings-daemon-4.0.3.tar.gz) = 68629fb1067096ee735087558e1455d8a2b572491eb9c880ae562e712bde46c31240fa848ffd7a298feafe95b71546b2fa1f4f9b6cdcfb3210a37195d909ef59
+Size (cinnamon-settings-daemon-4.0.3.tar.gz) = 663186 bytes
+SHA1 (patch-configure.ac) = 0ab4cb7368487fae951d68d5bc2a5d6c7f40f4f1
+SHA1 (patch-data_org.cinnamon.settings-daemon.plugins.power.gschema.xml.in.in) = 5da78c10161554521bba6ff19215763ddbe93e25
+SHA1 (patch-files_Makefile.in) = 1a100b728e963ffa354502913ef77b4d023e6acf
+SHA1 (patch-plugins_Makefile.am) = 492237b848baf9da31f78e705374f8e8ec6a2432
+SHA1 (patch-plugins_background_csd-background-manager.c) = 03549c68025e2fd31ea6cbae0346a1124c7a9a70
+SHA1 (patch-plugins_power_csd-power-manager.c) = 86ec01c3b9d3b5811c8581d2366033c3806c6942
