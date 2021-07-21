@@ -1,0 +1,3 @@
+$NetBSD: distinfo,v 1.2 2012/01/23 11:57:34 thomasklausner Exp $
+
+SHA1 (patch-Makefile) = 315b5af11f68f92b8f426a858d6d1ca24f4763c7

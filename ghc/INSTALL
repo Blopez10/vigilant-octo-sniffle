@@ -1,0 +1,9 @@
+#!@SH@
+#
+# $NetBSD$
+
+case "${STAGE}" in
+POST-INSTALL)
+	${PKG_PREFIX}/bin/ghc-pkg recache
+	;;
+esac

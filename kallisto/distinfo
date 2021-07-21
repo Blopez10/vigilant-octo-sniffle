@@ -1,0 +1,8 @@
+$NetBSD$
+
+SHA1 (kallisto-0.46.0.tar.gz) = bbbb6984e94cb12ef8419971c23b643cff99f343
+RMD160 (kallisto-0.46.0.tar.gz) = 7619aaaf4488298cbc593d1b412b3ae740dcccff
+SHA512 (kallisto-0.46.0.tar.gz) = 747aacc2b0e3d2f7e299d849e8cb9262ad16acf446350f2c993b342980dec087c6b9b46b7b5fc95159d3059fbd5b7e7e72fe8da90635e7870303e295393732e3
+Size (kallisto-0.46.0.tar.gz) = 2252729 bytes
+SHA1 (patch-CMakeLists.txt) = 2817091347e35898fec0bab77e8d9cc5ca5fff3f
+SHA1 (patch-src_CMakeLists.txt) = 2ef72024591c5216fbf44fb7cdfa4a8330b0c81a

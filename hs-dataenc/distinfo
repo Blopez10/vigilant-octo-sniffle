@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.8 2013/10/26 22:40:15 szptvlfn Exp $
+
+SHA1 (dataenc-0.14.0.5.tar.gz) = 583ccc82b409938875a446b23d9b09c7f03ae01c
+RMD160 (dataenc-0.14.0.5.tar.gz) = 07100901140c42532be4408628ca5bb5a9a11720
+Size (dataenc-0.14.0.5.tar.gz) = 12902 bytes

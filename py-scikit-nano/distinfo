@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2014/09/30 10:47:25 fhajny Exp $
+
+SHA1 (scikit-nano-0.2.25.tar.gz) = 25686b7dfcc0f42672b44010224d3bd27e0acf94
+RMD160 (scikit-nano-0.2.25.tar.gz) = 9598f9db4281fe732568a6d54bee41b53d351677
+Size (scikit-nano-0.2.25.tar.gz) = 6070852 bytes

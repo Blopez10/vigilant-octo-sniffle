@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2013/03/02 11:22:54 phonohawk Exp $
+
+SHA1 (test-framework-hunit-0.3.0.tar.gz) = a240a0e430396d0d55ed11e33d33796b88abc0eb
+RMD160 (test-framework-hunit-0.3.0.tar.gz) = 93b9e349bf15b380a76660c529715ed4610d6242
+Size (test-framework-hunit-0.3.0.tar.gz) = 2679 bytes

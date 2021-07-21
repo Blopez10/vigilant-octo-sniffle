@@ -1,0 +1,15 @@
+@comment $NetBSD$
+${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/idalink/__init__.py
+${PYSITELIB}/idalink/__init__.pyc
+${PYSITELIB}/idalink/__init__.pyo
+${PYSITELIB}/idalink/idalink.py
+${PYSITELIB}/idalink/idalink.pyc
+${PYSITELIB}/idalink/idalink.pyo
+${PYSITELIB}/idalink/memory.py
+${PYSITELIB}/idalink/memory.pyc
+${PYSITELIB}/idalink/memory.pyo
+${PYSITELIB}/idalink/server.py
+${PYSITELIB}/idalink/server.pyc
+${PYSITELIB}/idalink/server.pyo
+${PYSITELIB}/idalink/support/ida_env.sh

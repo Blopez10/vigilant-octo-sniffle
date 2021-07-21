@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2015/01/31 22:33:20 jihbed Exp $
+
+SHA1 (symath-0.1.22.tar.gz) = 83af56d7f49f508fe96974167d1dc3beb45fb567
+RMD160 (symath-0.1.22.tar.gz) = 37d5366727404c157ff1195af910405c3360abc7
+Size (symath-0.1.22.tar.gz) = 18562 bytes

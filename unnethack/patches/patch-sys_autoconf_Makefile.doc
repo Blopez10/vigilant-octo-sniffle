@@ -1,0 +1,37 @@
+$NetBSD: patch-sys_autoconf_Makefile.doc,v 1.4 2014/04/20 14:53:48 rhialto Exp $
+
+DESTDIR support and other configurability.
+
+--- sys/autoconf/Makefile.doc.orig	2013-12-08 15:00:26.000000000 +0000
++++ sys/autoconf/Makefile.doc
+@@ -49,11 +49,11 @@ Guidebook.dvi:	Guidebook.tex
+ #	tbl tmac.n Guidebook.mn | groff -Wall -Tdvi > Guidebook.dvi
+ 
+ GAME    = unnethack
+-MANDIR	= /usr/man/man6
++MANDIR	?= /usr/pkg/share/man/man6
+ MANEXT	= 6
+ 
+ # manual installation for most BSD-style systems
+-GAMEMANCREATE = cp $(GAME).6
++GAMEMANCREATE = cp nethack.6
+ LEVMANCREATE = cp lev_comp.6
+ DGNMANCREATE = cp dgn_comp.6
+ RCVRMANCREATE = cp recover.6
+@@ -67,11 +67,11 @@ DLBMANCREATE = cp dlb.6
+ # DLBMANCREATE = groff -Wall -mtty-char -Tascii -man dlb.6 >
+ 
+ manpages:
+-	-$(GAMEMANCREATE) $(MANDIR)/$(GAME).$(MANEXT)
+-	-$(LEVMANCREATE) $(MANDIR)/lev_comp.$(MANEXT)
+-	-$(DGNMANCREATE) $(MANDIR)/dgn_comp.$(MANEXT)
+-	-$(RCVRMANCREATE) $(MANDIR)/recover.$(MANEXT)
+-	-$(DLBMANCREATE) $(MANDIR)/dlb.$(MANEXT)
++	-$(GAMEMANCREATE) $(DESTDIR)/$(MANDIR)/$(GAME).$(MANEXT)
++	-$(LEVMANCREATE) $(DESTDIR)/$(MANDIR)/$(GAME)_lev_comp.$(MANEXT)
++	-$(DGNMANCREATE) $(DESTDIR)/$(MANDIR)/$(GAME)_dgn_comp.$(MANEXT)
++	-$(RCVRMANCREATE) $(DESTDIR)/$(MANDIR)/$(GAME)_recover.$(MANEXT)
++	-$(DLBMANCREATE) $(DESTDIR)/$(MANDIR)/$(GAME)_dlb.$(MANEXT)
+ 
+ # manual creation for distribution
+ DISTRIB = Guidebook.txt $(GAME).txt lev_comp.txt dgn_comp.txt recover.txt dlb.txt

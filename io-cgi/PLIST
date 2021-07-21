@@ -1,0 +1,23 @@
+@comment $NetBSD$
+lib/io/addons/CGI/CMakeFiles/CMakeDirectoryInformation.cmake
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/C.includecache
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/DependInfo.cmake
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/build.make
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/cmake_clean.cmake
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/depend.internal
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/depend.make
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/flags.make
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/link.txt
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/progress.make
+lib/io/addons/CGI/CMakeFiles/IoCGI.dir/source/IoCGIInit.c.o
+lib/io/addons/CGI/CMakeFiles/progress.marks
+lib/io/addons/CGI/CMakeLists.txt
+lib/io/addons/CGI/Makefile
+lib/io/addons/CGI/_build/dll/libIoCGI.so
+lib/io/addons/CGI/cmake_install.cmake
+lib/io/addons/CGI/depends
+lib/io/addons/CGI/io/CGI.io
+lib/io/addons/CGI/protos
+lib/io/addons/CGI/source/IoCGIInit.c
+lib/io/addons/CGI/tests/correctness/CGITest.io
+lib/io/addons/CGI/tests/correctness/run.io

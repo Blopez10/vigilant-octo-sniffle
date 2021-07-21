@@ -1,0 +1,15 @@
+# pkgsrc's work dir
+*/work
+# OBJHOSTNAME=yes use-case
+*/work.*
+
+# Temporary files
+Makefile-url2pkg.bak
+*~
+\#*\#
+*.orig
+*.core
+*.*.swp
+
+# CVS leftovers
+CVS

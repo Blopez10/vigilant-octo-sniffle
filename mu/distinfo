@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2014/11/02 18:30:40 thomasklausner Exp $
+
+SHA1 (mu-0.9.9.6.tar.gz) = 45feb511fecf8b306c87a42f3a84858ac442642c
+RMD160 (mu-0.9.9.6.tar.gz) = 59a8ef474bd5621cab7dd01bc368397b9c871f60
+Size (mu-0.9.9.6.tar.gz) = 2172349 bytes

@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.4 2013/04/16 10:06:58 szptvlfn Exp $
+
+SHA1 (explicit-iomodes-0.6.0.5.tar.gz) = 37fdb6815247bb9a7b4478ef0270b33e3f41753b
+RMD160 (explicit-iomodes-0.6.0.5.tar.gz) = fffa71d6856a2d5c941ade4b34954a081165b906
+Size (explicit-iomodes-0.6.0.5.tar.gz) = 7368 bytes

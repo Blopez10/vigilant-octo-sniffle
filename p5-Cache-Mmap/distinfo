@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.4 2013/04/02 06:59:29 jgoamakf Exp $
+
+SHA1 (Cache-Mmap-0.11.tar.gz) = 4b720642a0b07b914b16a23667419b74f09d8bf3
+RMD160 (Cache-Mmap-0.11.tar.gz) = 6e74d7d7523de88b7bf7a725bb23ad160a3d631e
+Size (Cache-Mmap-0.11.tar.gz) = 21547 bytes

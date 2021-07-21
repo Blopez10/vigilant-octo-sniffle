@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.2 2007/01/13 23:46:40 shattered Exp $
+bin/ding
+man/man1/ding.1
+share/dict/de-en.txt

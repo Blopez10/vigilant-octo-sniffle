@@ -1,0 +1,24 @@
+$NetBSD$
+
+Avoid test ==
+
+--- configure.ac.orig	2016-08-14 21:50:01.000000000 +0200
++++ configure.ac	2016-12-09 13:20:41.000000000 +0100
+@@ -821,7 +821,7 @@
+     AC_CHECK_FUNCS(krb5_is_thread_safe)
+ 
+     # see if krb5 is thread safe
+-    if test "x$ac_cv_func_krb5_is_thread_safe" == "xyes"
++    if test "x$ac_cv_func_krb5_is_thread_safe" = "xyes"
+     then
+       AC_CACHE_CHECK(
+           [krb5 thread safety],
+@@ -836,7 +836,7 @@
+                   [nslcd_cv_krb5_is_thread_safe=yes],
+                   [nslcd_cv_krb5_is_thread_safe=no],
+                   [nslcd_cv_krb5_is_thread_safe=unknown])])
+-      if test "x$nslcd_cv_krb5_is_thread_safe" == "xno"
++      if test "x$nslcd_cv_krb5_is_thread_safe" = "xno"
+       then
+         AC_MSG_WARN([krb5 is NOT thread safe])
+       fi
