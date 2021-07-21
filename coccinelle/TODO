@@ -1,0 +1,8 @@
+Still not ready for using it to update devel/coccinelle. The following issues
+should be investigated further and if possible fixed:
+
+ - Update to coccinelle-1.0.6 breaks textproc/coccigrep
+
+   XXXleot: provide a simple command to test that.
+    
+    -- leot (2017/10/10)

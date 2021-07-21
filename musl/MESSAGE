@@ -1,0 +1,5 @@
+Some functions in musl libc require that a Linux proc filesystem is
+available at the pathname /proc
+
+The musl 1.0.0 Reference Manual is available on the web,
+https://www.musl-libc.org/doc/1.0.0/manual.html 

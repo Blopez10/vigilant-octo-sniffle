@@ -1,0 +1,10 @@
+$NetBSD: distinfo,v 1.13 2017/01/26 20:12:32 nils Exp $
+
+SHA1 (58e33d126e9422ac5271d6bda724c9065564a440.tar.gz) = ace0b73de92266406acaa5d86aaca2493a2a24ba
+RMD160 (58e33d126e9422ac5271d6bda724c9065564a440.tar.gz) = 4c83ca4c58345fd4da2109f7fdbfc58adacc66bb
+SHA512 (58e33d126e9422ac5271d6bda724c9065564a440.tar.gz) = 66246f052ade1033e78e2e530499868d7bff34b926d31bba50b0ca949117441bf77e834efb5f7658140c5301ad45ddd8a80186c6df767e47b4998b55bafa4227
+Size (58e33d126e9422ac5271d6bda724c9065564a440.tar.gz) = 85348 bytes
+SHA1 (patch-config.c) = a6c775599857f01fa11bb99113795794f46664f5
+SHA1 (patch-examples_logrotate-default) = 6d3f575cc6563dd8c00dad4b1baa4e9d5eadae3b
+SHA1 (patch-examples_logrotate.cron) = e7e7a3f0ff77b3ee5fbf69ee2acecac136b0be8f
+SHA1 (patch-logrotate.8) = 0bf7d9cfbc2f5dfff42a82b523926b9c8d0362a0

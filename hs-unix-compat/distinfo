@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.4 2013/04/25 22:34:23 szptvlfn Exp $
+
+SHA1 (unix-compat-0.4.1.1.tar.gz) = 3d83c88534bc87ddaf137a6836545929f949d710
+RMD160 (unix-compat-0.4.1.1.tar.gz) = 0288dd5dd66194c0cc24d82e3324c4e626e1e2c4
+Size (unix-compat-0.4.1.1.tar.gz) = 13013 bytes

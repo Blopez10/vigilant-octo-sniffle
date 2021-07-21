@@ -1,0 +1,22 @@
+$NetBSD$
+
+Change some settings so they can be overridden by pkgsrc.
+
+--- Makefile.orig
++++ Makefile
+@@ -26,12 +26,12 @@
+ 
+ # Variables mandated by GNU, the arbiter of all good taste on the internet.
+ # http://www.gnu.org/prep/standards/standards.html
+-prefix=/usr/local
++prefix=$(PREFIX)
+ exec_prefix=$(prefix)
+ includedir=$(prefix)/include
+ libdir=$(exec_prefix)/lib
+-INSTALL=install
+-INSTALL_DATA=$(INSTALL) -m 644
++INSTALL?=install
++INSTALL_DATA?=$(INSTALL) -m 644
+ 
+ # Work around the weirdness of sed(1) on Darwin. :/
+ ifeq ($(shell uname),Darwin)

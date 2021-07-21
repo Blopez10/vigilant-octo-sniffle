@@ -1,0 +1,6 @@
+$NetBSD: distinfo,v 1.2 2013/12/07 16:05:47 jihbed Exp $
+
+SHA1 (python-ase-3.8.1.3440.tar.gz) = 57b9a9312de5e0bcabd03ea254efd9dbd63bbf27
+RMD160 (python-ase-3.8.1.3440.tar.gz) = 1ca60f8102da3eaddbcb7f324adf24601d37d630
+Size (python-ase-3.8.1.3440.tar.gz) = 1322723 bytes
+SHA1 (patch-setup.py) = db3c74b5f97c8f7fe0bb185f01ac7432160fbaa9

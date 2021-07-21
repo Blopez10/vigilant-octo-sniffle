@@ -1,0 +1,27 @@
+@comment $NetBSD$
+bin/wp2md
+${PYSITELIB}/${EGG_FILE}/PKG-INFO
+${PYSITELIB}/${EGG_FILE}/SOURCES.txt
+${PYSITELIB}/${EGG_FILE}/dependency_links.txt
+${PYSITELIB}/${EGG_FILE}/entry_points.txt
+${PYSITELIB}/${EGG_FILE}/not-zip-safe
+${PYSITELIB}/${EGG_FILE}/requires.txt
+${PYSITELIB}/${EGG_FILE}/top_level.txt
+${PYSITELIB}/wp2md/__init__.py
+${PYSITELIB}/wp2md/__main__.py
+${PYSITELIB}/wp2md/__init__.pyc
+${PYSITELIB}/wp2md/__init__.pyo
+${PYSITELIB}/wp2md/__main__.pyc
+${PYSITELIB}/wp2md/__main__.pyo
+${PYSITELIB}/wp2md/authoring.pyc
+${PYSITELIB}/wp2md/authoring.pyo
+${PYSITELIB}/wp2md/html2text.pyc
+${PYSITELIB}/wp2md/html2text.pyo
+${PYSITELIB}/wp2md/version.pyc
+${PYSITELIB}/wp2md/version.pyo
+${PYSITELIB}/wp2md/wp2md.pyc
+${PYSITELIB}/wp2md/wp2md.pyo
+${PYSITELIB}/wp2md/authoring.py
+${PYSITELIB}/wp2md/html2text.py
+${PYSITELIB}/wp2md/version.py
+${PYSITELIB}/wp2md/wp2md.py

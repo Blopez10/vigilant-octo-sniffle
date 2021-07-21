@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.2 2015/01/09 11:15:11 thomasklausner Exp $
+sbin/ntimed-client
+share/doc/ntimed/README.rst
+share/doc/ntimed/plotgen.py

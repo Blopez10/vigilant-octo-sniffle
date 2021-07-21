@@ -1,0 +1,20 @@
+$Thinkum$
+
+Ensure that the LIB path in install-scsh-image: is prefixed with DESTDIR
+
+The install-scsh: Makefile target should populate ${DESTDIR}/${LIB} in a 
+manner needed for the build-image.sh script, during install
+
+diff --git a/Makefile.in b/Makefile.in
+index 8e70418..c553c39 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -172,7 +172,7 @@ install-scsh: scsh
+ 
+ install-scsh-image: install-scsh
+ 	$(srcdir)/build/build-image.sh $(srcdir) \
+-		"$(LIB)/" '$(DESTDIR)$(LIB)/scsh.image' '$(SCHEME48) -h 0' '$(LOADS)'
++		"$(DESTDIR)$(LIB)/" '$(DESTDIR)$(LIB)/scsh.image' '$(SCHEME48) -h 0' '$(LOADS)'
+ 
+ clean:
+ 	rm -rf c/*.o c/*.so c/*.dSYM *.sexpr scsh.image scsh go *.dSYM

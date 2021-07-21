@@ -1,0 +1,7 @@
+Bareos is a set of computer programs that permits the system administrator
+to manage backup, recovery, and verfication of computer data
+across a network of computers of different kinds. Bareos can
+also run entirely upon a single computer and can backup to various types
+of media, including tape and disk.
+
+This the just the client installation part.

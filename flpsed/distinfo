@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2012/06/03 23:04:46 othyro Exp $
+
+SHA1 (flpsed-0.7.0.tar.gz) = 7966fd3b6fb3aa2a376386533ed4421ebb66ad62
+RMD160 (flpsed-0.7.0.tar.gz) = 912122b0be1c7a60ff9270cde55535287f1c2097
+Size (flpsed-0.7.0.tar.gz) = 119159 bytes

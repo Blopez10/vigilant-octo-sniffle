@@ -1,0 +1,3 @@
+scsh is a Unix shell embedded in scheme
+
+This package uses the Scheme Underground scsh sources

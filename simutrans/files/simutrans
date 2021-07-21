@@ -1,0 +1,3 @@
+#!/bin/sh
+cd XXXPREFIXXXX/share/simutrans/
+sim -use_workdir $@ 

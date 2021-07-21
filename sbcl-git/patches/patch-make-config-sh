@@ -1,0 +1,18 @@
+$Thinkum$
+
+Ensure the SBCL make.sh script will not re-run generate-version.sh when the
+file version.lisp-expr exists
+
+diff --git make-config.sh make-config.sh
+index ff5651fd4..4ce6029f3 100755
+--- make-config.sh
++++ make-config.sh
+@@ -246,7 +246,7 @@ echo "$SBCL_DYNAMIC_SPACE_SIZE" > output/dynamic-space-size.txt
+ . ./find-gnumake.sh
+ find_gnumake
+ 
+-./generate-version.sh
++[ -e "version.lisp-expr" ] || ./generate-version.sh
+ 
+ # Now that we've done our option parsing and found various
+ # dependencies, write them out to a file to be sourced by other

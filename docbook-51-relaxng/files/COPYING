@@ -1,0 +1,17 @@
+ DocBook Version 5.1
+ OASIS Standard 
+ 22 November 2016
+ Copyright (c) OASIS Open 2016. All Rights Reserved.
+ Source: http://docs.oasis-open.org/docbook/docbook/v5.1/os/schemas/rng/
+ Link to latest version of specification: http://docs.oasis-open.org/docbook/docbook/v5.1/docbook-v5.1.html
+
+This file is part of DocBook V5.1-OS
+
+If you modify the DocBook schema in any way, label your schema as a
+variant of DocBook. See the reference documentation
+(http://docbook.org/tdg5/en/html/ch05.html#s-notdocbook)
+for more information.
+
+Please direct all questions, bug reports, or suggestions for changes
+to the docbook-comment@lists.oasis-open.org mailing list. For more
+information, see http://www.oasis-open.org/docbook/.

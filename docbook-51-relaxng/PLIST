@@ -1,0 +1,19 @@
+@comment $Thinkum$
+share/doc/docbook-51-relaxng/COPYING
+share/doc/docbook-51-relaxng/docbook-v5.1-os.html
+share/doc/docbook-51-relaxng/docbook-v5.1-os.pdf
+share/doc/docbook-51-relaxng/docbook-v5.1-os.xml
+share/xml/docbook/5.1/catalog.xml
+share/xml/docbook/5.1/docbook.nvdl
+share/xml/docbook/5.1/rng/assembly.rnc
+share/xml/docbook/5.1/rng/assembly.rng
+share/xml/docbook/5.1/rng/dbits.rnc
+share/xml/docbook/5.1/rng/dbits.rng
+share/xml/docbook/5.1/rng/docbook.rnc
+share/xml/docbook/5.1/rng/docbook.rng
+share/xml/docbook/5.1/rng/docbookxi.rnc
+share/xml/docbook/5.1/rng/docbookxi.rng
+share/xml/docbook/5.1/sch/assembly.sch
+share/xml/docbook/5.1/sch/dbits.sch
+share/xml/docbook/5.1/sch/docbook.sch
+share/xml/docbook/5.1/sch/docbookxi.sch

@@ -1,0 +1,10 @@
+@comment $Thinkum$
+info/dash.info
+share/doc/${DOCBASE}/examples/examples.el
+share/doc/${DOCBASE}/examples/examples-to-docs.el
+share/doc/${DOCBASE}/examples/examples-to-info.el
+share/doc/${DOCBASE}/LICENSE
+${EMACS_LISPPREFIX}/${ELBASE}/dash.el
+${EMACS_LISPPREFIX}/${ELBASE}/dash.elc
+${EMACS_LISPPREFIX}/${ELBASE}/dash-functional.el
+${EMACS_LISPPREFIX}/${ELBASE}/dash-functional.elc

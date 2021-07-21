@@ -1,0 +1,6 @@
+$NetBSD: distinfo,v 1.2 2013/01/28 00:17:33 othyro Exp $
+
+SHA1 (GraphMonkey-1.7-src.tar.gz) = 5a857deb4f659c167fd65d70500c70edd2669bab
+RMD160 (GraphMonkey-1.7-src.tar.gz) = dd39d52d7ef3aeb2dac92d1f87e25ed9c1a41cb9
+Size (GraphMonkey-1.7-src.tar.gz) = 43992 bytes
+SHA1 (patch-Makefile) = 890af9672f6253c9bb90ed68d1cbf50b352f0d8a

@@ -1,0 +1,4 @@
+- Internal (lib)eb doesn't seem to honor CFLAGS.
+
+- Currently the bundled libjansson is built and statically linked. We should avoid
+  building it and dynamically link the pkgsrc-supplied libjansson instead.

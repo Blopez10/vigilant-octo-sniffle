@@ -1,0 +1,3 @@
+@comment $Id: DESCR,v 1.1.1.2 2012/03/18 13:25:53 makoto Exp $
+Meta package to create and preview Japanese Documents with
+pTeX and pLaTeX.

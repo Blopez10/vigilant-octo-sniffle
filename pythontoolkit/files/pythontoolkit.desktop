@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PythonToolkit
+Exec=PTK
+Icon=/usr/pkg/share/pythontoolkit/icons/ptkicon.svg
+Terminal=false
+Type=Application
+Categories=Development;
+StartupNotify=true

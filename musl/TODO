@@ -1,0 +1,4 @@
+musl - obsolete versions https://www.musl-libc.org/oldversions.html
+CVE-2015-1817	- versions 0.9.15 to 1.0.4, 1.1.0 to 1.1.7 affected
+CVE-2016-8859	- versions previous to 1.16 affected
+CVE-2017-15650	- versions 1.1.2 to 1.1.16 affected

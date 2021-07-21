@@ -1,0 +1,59 @@
+$Thinkum$
+
+diff --git doc/manual/intro.texinfo doc/manual/intro.texinfo
+index 7c923679a..65869245a 100644
+--- doc/manual/intro.texinfo
++++ doc/manual/intro.texinfo
+@@ -382,7 +382,7 @@ case the documentation strings are only readable in the source code.
+ Besides this user manual both SBCL source and binary distributions
+ include some other SBCL-specific documentation files, which should be
+ installed along with this manual on your system, e.g. in
+-@file{/usr/local/share/doc/sbcl/}.
++@file{@PREFIX@/share/doc/sbcl/}.
+ 
+ @table @file
+ 
+diff --git doc/manual/start-stop.texinfo doc/manual/start-stop.texinfo
+index 5f4ff5b34..01d312237 100644
+--- doc/manual/start-stop.texinfo
++++ doc/manual/start-stop.texinfo
+@@ -56,7 +56,7 @@ something like:
+ 
+ @lisp
+ ;;; The SBCL binary and command-line arguments
+-(setq inferior-lisp-program "/usr/local/bin/sbcl --noinform")
++(setq inferior-lisp-program "@PREFIX@/bin/sbcl --noinform")
+ @end lisp
+ 
+ For more information on using SBCL with Emacs, see @ref{Editor
+@@ -75,7 +75,7 @@ this via the @code{--script} command line option.
+ Example file (@file{hello.lisp}):
+ 
+ @lisp
+-#!/usr/local/bin/sbcl --script
++#!@PREFIX@/bin/sbcl --script
+ (write-line "Hello, World!")
+ @end lisp
+ 
+diff --git doc/sbcl.1 doc/sbcl.1
+index b092a85e9..97f28332a 100644
+--- doc/sbcl.1
++++ doc/sbcl.1
+@@ -422,7 +422,7 @@ years. See the CREDITS file in the distribution for more information.
+ This variable controls where files like "sbclrc", "sbcl.core", and the
+ add-on "contrib" systems are searched for.  If it is not set, then
+ sbcl sets it from a compile-time default location which is usually
+-\fB/usr/local/lib/sbcl/\fR but may have been changed \fIe.g.\fR by a third-party
++\fB@PREFIX@/lib/sbcl/\fR but may have been changed \fIe.g.\fR by a third-party
+ packager.
+ 
+ .SH FILES
+@@ -456,7 +456,7 @@ been installed, the command
+ should give you access to the complete manual. Depending on your
+ installation it may also be available in HTML and PDF formats in \fIe.g.\fR
+ .IP
+-.B /usr/local/share/doc/sbcl/
++.B @PREFIX@/share/doc/sbcl/
+ .PP
+ See the SBCL homepage 
+ .IP

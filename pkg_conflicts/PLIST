@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.2 2008/12/02 22:51:15 cheusov Exp $
+bin/pkg_all_conflicts
+bin/pkg_common_files
+bin/pkg_conflicts

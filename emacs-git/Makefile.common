@@ -1,0 +1,43 @@
+# $NetBSD$
+#
+# used by wip/emacs-git/Makefile
+# used by wip/emacs-nox11-git/Makefile
+
+.if !defined(EMACS_GIT_COMMON_MK)
+EMACS_GIT_COMMON_MK=	#defined
+
+.include "../../editors/emacs26/Makefile.common"
+
+PKGNAME=	emacs27-${_EMACS_VERSION_MAJOR}.${_EMACS_VERSION_MINOR}.${_EMACS_VERSION_MICRO}
+DISTNAME=	emacs-${_EMACS_VERSION_MAJOR}.${_EMACS_VERSION_MINOR}.${_EMACS_VERSION_MICRO}
+WRKSRC=		${WRKDIR}/emacs
+
+GIT_REPO=	git://git.savannah.gnu.org/emacs.git
+#_GIT_FLAGS?=	--depth 1
+## ^ default now. 
+## ^ To override, set GIT_DEEP_CLONE.default=yes local to this port
+
+# for example, Mac OS X 10.6.1 has 2.61 which fails
+AUTOCONF_REQD=	2.65
+# NetBSD has 4.8
+TEXINFO_REQD=	4.13
+
+## from an earlier wip/emacs-nox11-git/Makefile
+#REPLACE_PERL=		lib-src/grep-changelog
+#CHECK_INTERPRETER_SKIP=	bin/grep-changelog
+
+
+PRINT_PLIST_AWK+=	{ gsub(/${PKGVERSION_NOREV}/, "$${PKGVERSION}"); \
+			print; next; }
+
+post-extract:
+#	set auto-load for send-pr library
+	cp ${FILESDIR}/site-init.el ${WRKSRC}/lisp
+
+pre-configure:
+	(cd ${WRKSRC}; ${PKGSRC_SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ./autogen.sh)
+
+.include "../../wip/mk/git-package.mk"
+
+.endif
+

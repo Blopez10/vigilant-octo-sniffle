@@ -1,0 +1,34 @@
+# $NetBSD: Makefile.common,v 1.4 2014/01/28 11:44:14 obache Exp $
+#
+# used by wip/cygwin-binutils/Makefile
+# used by wip/cygwin-gcc/Makefile
+# used by wip/cygwin-gcc/buildlink3.mk
+
+.if !defined(CYGWIN_MAKEFILECOMMON)
+CYGWIN_MAKEFILECOMMON=	# yes
+
+CYGWIN_TARGET?=		i386--cygwin
+PLIST_SUBST+=		CYGWIN_TARGET=${CYGWIN_TARGET:Q}
+MAKE_ENV+=		CYGWIN_TARGET=${CYGWIN_TARGET:Q}
+CONFIGURE_ENV+=		CYGWIN_TARGET=${CYGWIN_TARGET:Q}
+
+PATH:=			${PREFIX}/cross/bin:${PATH}
+
+BUILD_DEPENDS+=		gtexinfo-[0-9]*:../../devel/gtexinfo
+
+.  if defined(GNU_CONFIGURE)
+CONFIGURE_ARGS=		# reset
+CONFIGURE_ARGS+=	--prefix=${PREFIX}
+GNU_CONFIGURE_PREFIX=	${PREFIX}/cross
+GNU_CONFIGURE_LIBDIR=	${PREFIX}/cross/${CYGWIN_TARGET:Q}/lib
+GNU_CONFIGURE_INFODIR=	${PREFIX}/cross/${CYGWIN_TARGET:Q}/info
+CONFIGURE_ARGS+=	--datadir=${PREFIX}/cross/${CYGWIN_TARGET:Q}/share
+#ONFIGURE_ARGS+=	--mandir=${PREFIX}/cross/${CYGWIN_TARGET:Q}/man
+CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/cross
+CONFIGURE_ARGS+=	--target=${CYGWIN_TARGET:Q}
+# following line to avoid getting
+#    make: exec(i386--netbsdelf-ar) failed (No such file or directory)
+USE_GNU_CONFIGURE_HOST=	NO
+.  endif
+
+.endif

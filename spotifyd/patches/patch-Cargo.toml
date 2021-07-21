@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Cargo.toml.orig	2019-06-19 20:25:58.000000000 +0000
++++ Cargo.toml
+@@ -29,7 +29,7 @@ xdg = "2.2"
+ [dependencies.librespot]
+ default-features = false
+ features = ["with-tremor"]
+-git = "https://github.com/librespot-org/librespot.git"
++path = "../librespot"
+ 
+ [features]
+ alsa_backend = ["librespot/alsa-backend", "alsa"]
